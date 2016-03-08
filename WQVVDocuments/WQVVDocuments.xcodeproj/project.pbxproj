@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		962099111C8E95E2009847E3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962099101C8E95E2009847E3 /* AppKit.framework */; };
+		962099131C8E95E2009847E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962099121C8E95E2009847E3 /* Foundation.framework */; };
+		962099171C8E95E2009847E3 /* WQVVDocuments.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 962099161C8E95E2009847E3 /* WQVVDocuments.xcscheme */; };
+		9620991A1C8E95E2009847E3 /* WQVVDocuments.m in Sources */ = {isa = PBXBuildFile; fileRef = 962099191C8E95E2009847E3 /* WQVVDocuments.m */; };
+		9620991D1C8E95E2009847E3 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9620991C1C8E95E2009847E3 /* NSObject_Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9620990D1C8E95E2009847E3 /* WQVVDocuments.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WQVVDocuments.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		962099101C8E95E2009847E3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		962099121C8E95E2009847E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		962099161C8E95E2009847E3 /* WQVVDocuments.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = WQVVDocuments.xcscheme; path = WQVVDocuments.xcodeproj/xcshareddata/xcschemes/WQVVDocuments.xcscheme; sourceTree = SOURCE_ROOT; };
+		962099181C8E95E2009847E3 /* WQVVDocuments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQVVDocuments.h; sourceTree = "<group>"; };
+		962099191C8E95E2009847E3 /* WQVVDocuments.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQVVDocuments.m; sourceTree = "<group>"; };
+		9620991B1C8E95E2009847E3 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		9620991C1C8E95E2009847E3 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		9620991E1C8E95E2009847E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9620990B1C8E95E2009847E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962099111C8E95E2009847E3 /* AppKit.framework in Frameworks */,
+				962099131C8E95E2009847E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		962099041C8E95E2009847E3 = {
+			isa = PBXGroup;
+			children = (
+				962099141C8E95E2009847E3 /* WQVVDocuments */,
+				9620990F1C8E95E2009847E3 /* Frameworks */,
+				9620990E1C8E95E2009847E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9620990E1C8E95E2009847E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9620990D1C8E95E2009847E3 /* WQVVDocuments.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9620990F1C8E95E2009847E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				962099101C8E95E2009847E3 /* AppKit.framework */,
+				962099121C8E95E2009847E3 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		962099141C8E95E2009847E3 /* WQVVDocuments */ = {
+			isa = PBXGroup;
+			children = (
+				962099181C8E95E2009847E3 /* WQVVDocuments.h */,
+				962099191C8E95E2009847E3 /* WQVVDocuments.m */,
+				9620991B1C8E95E2009847E3 /* NSObject_Extension.h */,
+				9620991C1C8E95E2009847E3 /* NSObject_Extension.m */,
+				9620991E1C8E95E2009847E3 /* Info.plist */,
+				962099151C8E95E2009847E3 /* Supporting Files */,
+			);
+			path = WQVVDocuments;
+			sourceTree = "<group>";
+		};
+		962099151C8E95E2009847E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				962099161C8E95E2009847E3 /* WQVVDocuments.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9620990C1C8E95E2009847E3 /* WQVVDocuments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 962099211C8E95E2009847E3 /* Build configuration list for PBXNativeTarget "WQVVDocuments" */;
+			buildPhases = (
+				962099091C8E95E2009847E3 /* Sources */,
+				9620990A1C8E95E2009847E3 /* Resources */,
+				9620990B1C8E95E2009847E3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WQVVDocuments;
+			productName = WQVVDocuments;
+			productReference = 9620990D1C8E95E2009847E3 /* WQVVDocuments.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		962099051C8E95E2009847E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Shanesun;
+				TargetAttributes = {
+					9620990C1C8E95E2009847E3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 962099081C8E95E2009847E3 /* Build configuration list for PBXProject "WQVVDocuments" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 962099041C8E95E2009847E3;
+			productRefGroup = 9620990E1C8E95E2009847E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9620990C1C8E95E2009847E3 /* WQVVDocuments */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9620990A1C8E95E2009847E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962099171C8E95E2009847E3 /* WQVVDocuments.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		962099091C8E95E2009847E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9620991A1C8E95E2009847E3 /* WQVVDocuments.m in Sources */,
+				9620991D1C8E95E2009847E3 /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9620991F1C8E95E2009847E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		962099201C8E95E2009847E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		962099221C8E95E2009847E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = WQVVDocuments/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = Shanesun.WQVVDocuments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		962099231C8E95E2009847E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = WQVVDocuments/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = Shanesun.WQVVDocuments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		962099081C8E95E2009847E3 /* Build configuration list for PBXProject "WQVVDocuments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9620991F1C8E95E2009847E3 /* Debug */,
+				962099201C8E95E2009847E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		962099211C8E95E2009847E3 /* Build configuration list for PBXNativeTarget "WQVVDocuments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				962099221C8E95E2009847E3 /* Debug */,
+				962099231C8E95E2009847E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 962099051C8E95E2009847E3 /* Project object */;
+}
