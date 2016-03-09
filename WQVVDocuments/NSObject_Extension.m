@@ -14,6 +14,7 @@
 
 + (void)pluginDidLoad:(NSBundle *)plugin
 {
+    NSLog(@"Start plugin ~!!");
     static dispatch_once_t onceToken;
     NSString *currentApplicationName = [[NSBundle mainBundle] infoDictionary][@"CFBundleName"];
     if ([currentApplicationName isEqual:@"Xcode"]) {
