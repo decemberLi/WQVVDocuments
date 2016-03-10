@@ -38,25 +38,38 @@
     //removeObserver
     [[NSNotificationCenter defaultCenter] removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
     
-    // Create menu items, initialize UI, etc.
-    // Sample Menu Item:
-    NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
-    if (menuItem) {
-        [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
-        NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Do Action" action:@selector(doMenuAction) keyEquivalent:@""];
-        //[actionMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
-        [actionMenuItem setTarget:self];
-        [[menuItem submenu] addItem:actionMenuItem];
-    }
+    NSLog(@"======== Plugin in ");
+    NSMenuItem *windowItem = [[NSApp mainMenu] itemWithTitle:@"Window"];
+
+    if (!windowItem)  return;
+    
+    [[windowItem submenu] addItem:[NSMenuItem separatorItem]];
+    
+    NSMenuItem *WQVVDocuments = [[NSMenuItem alloc] initWithTitle:@"WQDocuments" action:@selector(clickedDocuments) keyEquivalent:@""];
+    WQVVDocuments.target = self;
+    [[windowItem submenu] addItem:WQVVDocuments];
+    
+    NSMenuItem *WQCreateModelFormJson = [[NSMenuItem alloc] initWithTitle:@"WQModel" action:@selector(clickedCreateModel) keyEquivalent:@""];
+    WQCreateModelFormJson.target = self;
+    [[windowItem submenu] addItem:WQCreateModelFormJson];
+    
 }
 
 // Sample Action, for menu item:
-- (void)doMenuAction
+- (void)clickedDocuments
 {
     NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"Hello, World"];
+    [alert setMessageText:@"WQDocuments"];
     [alert runModal];
 }
+
+- (void)clickedCreateModel
+{
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setMessageText:@"WQModel"];
+    [alert runModal];
+}
+
 
 - (void)dealloc
 {
