@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34A893651C96E450006FDC6D /* NSTextView+VVTextGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A893641C96E450006FDC6D /* NSTextView+VVTextGetter.m */; };
+		34A893681C96E53A006FDC6D /* VVDocumentsEnter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A893671C96E53A006FDC6D /* VVDocumentsEnter.m */; };
 		962099111C8E95E2009847E3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962099101C8E95E2009847E3 /* AppKit.framework */; };
 		962099131C8E95E2009847E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962099121C8E95E2009847E3 /* Foundation.framework */; };
 		962099171C8E95E2009847E3 /* WQVVDocuments.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 962099161C8E95E2009847E3 /* WQVVDocuments.xcscheme */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34A893631C96E450006FDC6D /* NSTextView+VVTextGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView+VVTextGetter.h"; sourceTree = "<group>"; };
+		34A893641C96E450006FDC6D /* NSTextView+VVTextGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+VVTextGetter.m"; sourceTree = "<group>"; };
+		34A893661C96E53A006FDC6D /* VVDocumentsEnter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDocumentsEnter.h; sourceTree = "<group>"; };
+		34A893671C96E53A006FDC6D /* VVDocumentsEnter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVDocumentsEnter.m; sourceTree = "<group>"; };
 		9620990D1C8E95E2009847E3 /* WQVVDocuments.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WQVVDocuments.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		962099101C8E95E2009847E3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		962099121C8E95E2009847E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -39,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34A893611C96E3F3006FDC6D /* VVDocuments */ = {
+			isa = PBXGroup;
+			children = (
+				34A893661C96E53A006FDC6D /* VVDocumentsEnter.h */,
+				34A893671C96E53A006FDC6D /* VVDocumentsEnter.m */,
+				34A893621C96E450006FDC6D /* OCCategory */,
+			);
+			path = VVDocuments;
+			sourceTree = "<group>";
+		};
+		34A893621C96E450006FDC6D /* OCCategory */ = {
+			isa = PBXGroup;
+			children = (
+				34A893631C96E450006FDC6D /* NSTextView+VVTextGetter.h */,
+				34A893641C96E450006FDC6D /* NSTextView+VVTextGetter.m */,
+			);
+			path = OCCategory;
+			sourceTree = "<group>";
+		};
 		962099041C8E95E2009847E3 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +93,7 @@
 		962099141C8E95E2009847E3 /* WQVVDocuments */ = {
 			isa = PBXGroup;
 			children = (
+				34A893611C96E3F3006FDC6D /* VVDocuments */,
 				962099181C8E95E2009847E3 /* WQVVDocuments.h */,
 				962099191C8E95E2009847E3 /* WQVVDocuments.m */,
 				9620991B1C8E95E2009847E3 /* NSObject_Extension.h */,
@@ -154,7 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9620991A1C8E95E2009847E3 /* WQVVDocuments.m in Sources */,
+				34A893681C96E53A006FDC6D /* VVDocumentsEnter.m in Sources */,
 				9620991D1C8E95E2009847E3 /* NSObject_Extension.m in Sources */,
+				34A893651C96E450006FDC6D /* NSTextView+VVTextGetter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +311,7 @@
 				962099231C8E95E2009847E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

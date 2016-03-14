@@ -8,6 +8,7 @@
 
 #import "WQVVDocuments.h"
 
+
 @interface WQVVDocuments()
 
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
@@ -38,9 +39,22 @@
     //removeObserver
     [[NSNotificationCenter defaultCenter] removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(textStorageDidChange:)
+                                                 name:NSTextDidChangeNotification
+                                               object:nil];
+}
+
+- (void)textStorageDidChange:(NSNotification *)noti
+{
+    
+}
+
+- (void)addSettingMenus
+{
     NSLog(@"======== Plugin in ");
     NSMenuItem *windowItem = [[NSApp mainMenu] itemWithTitle:@"Window"];
-
+    
     if (!windowItem)  return;
     
     [[windowItem submenu] addItem:[NSMenuItem separatorItem]];
@@ -52,11 +66,10 @@
     NSMenuItem *WQCreateModelFormJson = [[NSMenuItem alloc] initWithTitle:@"WQModel" action:@selector(clickedCreateModel) keyEquivalent:@""];
     WQCreateModelFormJson.target = self;
     [[windowItem submenu] addItem:WQCreateModelFormJson];
-    
 }
 
 // Sample Action, for menu item:
-- (void)clickedDocuments
+- (void)clickedDocuments 
 {
     NSAlert *alert = [[NSAlert alloc] init];
     [alert setMessageText:@"WQDocuments"];
