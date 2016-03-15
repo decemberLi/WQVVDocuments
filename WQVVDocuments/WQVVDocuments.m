@@ -7,11 +7,16 @@
 //
 
 #import "WQVVDocuments.h"
+<<<<<<< HEAD
 #import "NSTextView+VVTextGetter.h"
 #import "NSString+PDRegex.h"
 #import "VVTextResult.h"
 //
 #import "WQModelVC.h"
+=======
+#import "WQModelVC.h"
+
+>>>>>>> 483fad7b1684859408228654d1891a3342f2029a
 
 @interface WQVVDocuments()
 
