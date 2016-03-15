@@ -8,10 +8,14 @@
 
 #import "VVDocumentsEnter.h"
 
+#import <AppKit/AppKit.h>
+
 @implementation VVDocumentsEnter
 
-+ (void)VVDocumentsWithString:(NSString *)intputString
++ (void)VVDocumentsWithString:(NSNotification *)noti
 {
+    
+  
     
 }
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343EF13E1C97C989002F3955 /* VVTextResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 343EF13D1C97C989002F3955 /* VVTextResult.m */; };
+		343EF1411C97C9C6002F3955 /* NSString+VVTextGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 343EF1401C97C9C6002F3955 /* NSString+VVTextGetter.m */; };
+		343EF1441C97C9CD002F3955 /* NSString+VVSyntax.m in Sources */ = {isa = PBXBuildFile; fileRef = 343EF1431C97C9CD002F3955 /* NSString+VVSyntax.m */; };
+		343EF1471C97C9D4002F3955 /* NSString+PDRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 343EF1461C97C9D4002F3955 /* NSString+PDRegex.m */; };
 		34A893651C96E450006FDC6D /* NSTextView+VVTextGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A893641C96E450006FDC6D /* NSTextView+VVTextGetter.m */; };
 		34A893681C96E53A006FDC6D /* VVDocumentsEnter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A893671C96E53A006FDC6D /* VVDocumentsEnter.m */; };
 		962099111C8E95E2009847E3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962099101C8E95E2009847E3 /* AppKit.framework */; };
@@ -17,6 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		343EF13C1C97C989002F3955 /* VVTextResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTextResult.h; sourceTree = "<group>"; };
+		343EF13D1C97C989002F3955 /* VVTextResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTextResult.m; sourceTree = "<group>"; };
+		343EF13F1C97C9C6002F3955 /* NSString+VVTextGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VVTextGetter.h"; sourceTree = "<group>"; };
+		343EF1401C97C9C6002F3955 /* NSString+VVTextGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VVTextGetter.m"; sourceTree = "<group>"; };
+		343EF1421C97C9CD002F3955 /* NSString+VVSyntax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VVSyntax.h"; sourceTree = "<group>"; };
+		343EF1431C97C9CD002F3955 /* NSString+VVSyntax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VVSyntax.m"; sourceTree = "<group>"; };
+		343EF1451C97C9D4002F3955 /* NSString+PDRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PDRegex.h"; sourceTree = "<group>"; };
+		343EF1461C97C9D4002F3955 /* NSString+PDRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PDRegex.m"; sourceTree = "<group>"; };
 		34A893631C96E450006FDC6D /* NSTextView+VVTextGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView+VVTextGetter.h"; sourceTree = "<group>"; };
 		34A893641C96E450006FDC6D /* NSTextView+VVTextGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+VVTextGetter.m"; sourceTree = "<group>"; };
 		34A893661C96E53A006FDC6D /* VVDocumentsEnter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDocumentsEnter.h; sourceTree = "<group>"; };
@@ -58,6 +70,14 @@
 		34A893621C96E450006FDC6D /* OCCategory */ = {
 			isa = PBXGroup;
 			children = (
+				343EF1451C97C9D4002F3955 /* NSString+PDRegex.h */,
+				343EF1461C97C9D4002F3955 /* NSString+PDRegex.m */,
+				343EF1421C97C9CD002F3955 /* NSString+VVSyntax.h */,
+				343EF1431C97C9CD002F3955 /* NSString+VVSyntax.m */,
+				343EF13F1C97C9C6002F3955 /* NSString+VVTextGetter.h */,
+				343EF1401C97C9C6002F3955 /* NSString+VVTextGetter.m */,
+				343EF13C1C97C989002F3955 /* VVTextResult.h */,
+				343EF13D1C97C989002F3955 /* VVTextResult.m */,
 				34A893631C96E450006FDC6D /* NSTextView+VVTextGetter.h */,
 				34A893641C96E450006FDC6D /* NSTextView+VVTextGetter.m */,
 			);
@@ -179,10 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343EF13E1C97C989002F3955 /* VVTextResult.m in Sources */,
 				9620991A1C8E95E2009847E3 /* WQVVDocuments.m in Sources */,
 				34A893681C96E53A006FDC6D /* VVDocumentsEnter.m in Sources */,
+				343EF1441C97C9CD002F3955 /* NSString+VVSyntax.m in Sources */,
+				343EF1411C97C9C6002F3955 /* NSString+VVTextGetter.m in Sources */,
 				9620991D1C8E95E2009847E3 /* NSObject_Extension.m in Sources */,
 				34A893651C96E450006FDC6D /* NSTextView+VVTextGetter.m in Sources */,
+				343EF1471C97C9D4002F3955 /* NSString+PDRegex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
