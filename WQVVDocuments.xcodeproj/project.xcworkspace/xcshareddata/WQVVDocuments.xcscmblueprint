@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "71896857BEEBD04C1DF8165EB5ECDD9E748B31E1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "96F9A3FFDBE542CA207EE15F359A87494F0DDE3B" : 0,
+    "71896857BEEBD04C1DF8165EB5ECDD9E748B31E1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7124B1DE-2F7C-4105-B146-CFD845C0CEF1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "96F9A3FFDBE542CA207EE15F359A87494F0DDE3B" : "VVDocumenter-Xcode\/",
+    "71896857BEEBD04C1DF8165EB5ECDD9E748B31E1" : "WQVVDocuments\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WQVVDocuments",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WQVVDocuments.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/decemberLi\/WQVVDocuments.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "71896857BEEBD04C1DF8165EB5ECDD9E748B31E1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Shanesun\/VVDocumenter-Xcode.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "96F9A3FFDBE542CA207EE15F359A87494F0DDE3B"
+    }
+  ]
+}

@@ -12,7 +12,11 @@
 		343EF1441C97C9CD002F3955 /* NSString+VVSyntax.m in Sources */ = {isa = PBXBuildFile; fileRef = 343EF1431C97C9CD002F3955 /* NSString+VVSyntax.m */; };
 		343EF1471C97C9D4002F3955 /* NSString+PDRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 343EF1461C97C9D4002F3955 /* NSString+PDRegex.m */; };
 		34A893651C96E450006FDC6D /* NSTextView+VVTextGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A893641C96E450006FDC6D /* NSTextView+VVTextGetter.m */; };
-		34A893681C96E53A006FDC6D /* VVDocumentsEnter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A893671C96E53A006FDC6D /* VVDocumentsEnter.m */; };
+		960B1BA21C985C8400C42EE5 /* VVDocumentsEnter.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B1BA11C985C8400C42EE5 /* VVDocumentsEnter.m */; };
+		960B1BAA1C985CE200C42EE5 /* VVProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B1BA61C985CE200C42EE5 /* VVProject.m */; };
+		960B1BAB1C985CE200C42EE5 /* VVWorkspaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B1BA81C985CE200C42EE5 /* VVWorkspaceManager.m */; };
+		960B1BAE1C985D8400C42EE5 /* VVKeyboardEventSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B1BAD1C985D8400C42EE5 /* VVKeyboardEventSender.m */; };
+		960B1BB11C985DB300C42EE5 /* WQDocumentsSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B1BB01C985DB300C42EE5 /* WQDocumentsSetting.m */; };
 		962099111C8E95E2009847E3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962099101C8E95E2009847E3 /* AppKit.framework */; };
 		962099131C8E95E2009847E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962099121C8E95E2009847E3 /* Foundation.framework */; };
 		9620991A1C8E95E2009847E3 /* WQVVDocuments.m in Sources */ = {isa = PBXBuildFile; fileRef = 962099191C8E95E2009847E3 /* WQVVDocuments.m */; };
@@ -21,8 +25,6 @@
 		C2159C491C969A5B00A39F10 /* WQModelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2159C481C969A5B00A39F10 /* WQModelVC.m */; };
 		C2159C4B1C969D6E00A39F10 /* WQModelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2159C4A1C969D6E00A39F10 /* WQModelVC.xib */; };
 		C2159C4E1C96A38100A39F10 /* DragTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2159C4D1C96A38100A39F10 /* DragTextView.m */; };
-		C2798EE31C96E9460092A55D /* VVProject.m in Sources */ = {isa = PBXBuildFile; fileRef = C2798EE01C96E9460092A55D /* VVProject.m */; };
-		C2798EE41C96E9460092A55D /* VVWorkspaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2798EE21C96E9460092A55D /* VVWorkspaceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +39,17 @@
 		343EF1461C97C9D4002F3955 /* NSString+PDRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PDRegex.m"; sourceTree = "<group>"; };
 		34A893631C96E450006FDC6D /* NSTextView+VVTextGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView+VVTextGetter.h"; sourceTree = "<group>"; };
 		34A893641C96E450006FDC6D /* NSTextView+VVTextGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+VVTextGetter.m"; sourceTree = "<group>"; };
-		34A893661C96E53A006FDC6D /* VVDocumentsEnter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDocumentsEnter.h; sourceTree = "<group>"; };
-		34A893671C96E53A006FDC6D /* VVDocumentsEnter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVDocumentsEnter.m; sourceTree = "<group>"; };
+		960B1BA01C985C8400C42EE5 /* VVDocumentsEnter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDocumentsEnter.h; sourceTree = "<group>"; };
+		960B1BA11C985C8400C42EE5 /* VVDocumentsEnter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVDocumentsEnter.m; sourceTree = "<group>"; };
+		960B1BA51C985CE200C42EE5 /* VVProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVProject.h; sourceTree = "<group>"; };
+		960B1BA61C985CE200C42EE5 /* VVProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVProject.m; sourceTree = "<group>"; };
+		960B1BA71C985CE200C42EE5 /* VVWorkspaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVWorkspaceManager.h; sourceTree = "<group>"; };
+		960B1BA81C985CE200C42EE5 /* VVWorkspaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVWorkspaceManager.m; sourceTree = "<group>"; };
+		960B1BA91C985CE200C42EE5 /* XCFXcodePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFXcodePrivate.h; sourceTree = "<group>"; };
+		960B1BAC1C985D8400C42EE5 /* VVKeyboardEventSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVKeyboardEventSender.h; sourceTree = "<group>"; };
+		960B1BAD1C985D8400C42EE5 /* VVKeyboardEventSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVKeyboardEventSender.m; sourceTree = "<group>"; };
+		960B1BAF1C985DB300C42EE5 /* WQDocumentsSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQDocumentsSetting.h; sourceTree = "<group>"; };
+		960B1BB01C985DB300C42EE5 /* WQDocumentsSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQDocumentsSetting.m; sourceTree = "<group>"; };
 		9620990D1C8E95E2009847E3 /* WQVVDocuments.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WQVVDocuments.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		962099101C8E95E2009847E3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		962099121C8E95E2009847E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -54,11 +65,6 @@
 		C2159C4A1C969D6E00A39F10 /* WQModelVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WQModelVC.xib; sourceTree = "<group>"; };
 		C2159C4C1C96A38100A39F10 /* DragTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragTextView.h; sourceTree = "<group>"; };
 		C2159C4D1C96A38100A39F10 /* DragTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragTextView.m; sourceTree = "<group>"; };
-		C2798EDD1C96D2130092A55D /* XCFXcodePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCFXcodePrivate.h; sourceTree = "<group>"; };
-		C2798EDF1C96E9460092A55D /* VVProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVProject.h; sourceTree = "<group>"; };
-		C2798EE01C96E9460092A55D /* VVProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVProject.m; sourceTree = "<group>"; };
-		C2798EE11C96E9460092A55D /* VVWorkspaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVWorkspaceManager.h; sourceTree = "<group>"; };
-		C2798EE21C96E9460092A55D /* VVWorkspaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVWorkspaceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,6 @@
 		34A893611C96E3F3006FDC6D /* VVDocuments */ = {
 			isa = PBXGroup;
 			children = (
-				34A893661C96E53A006FDC6D /* VVDocumentsEnter.h */,
-				34A893671C96E53A006FDC6D /* VVDocumentsEnter.m */,
 				34A893621C96E450006FDC6D /* OCCategory */,
 			);
 			path = VVDocuments;
@@ -99,6 +103,39 @@
 				34A893641C96E450006FDC6D /* NSTextView+VVTextGetter.m */,
 			);
 			path = OCCategory;
+			sourceTree = "<group>";
+		};
+		960B1B9F1C985C3B00C42EE5 /* WQDocuments */ = {
+			isa = PBXGroup;
+			children = (
+				960B1BA01C985C8400C42EE5 /* VVDocumentsEnter.h */,
+				960B1BA11C985C8400C42EE5 /* VVDocumentsEnter.m */,
+				960B1BAF1C985DB300C42EE5 /* WQDocumentsSetting.h */,
+				960B1BB01C985DB300C42EE5 /* WQDocumentsSetting.m */,
+			);
+			path = WQDocuments;
+			sourceTree = "<group>";
+		};
+		960B1BA31C985CE200C42EE5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				960B1BA91C985CE200C42EE5 /* XCFXcodePrivate.h */,
+				960B1BA41C985CE200C42EE5 /* VVProjectHelper */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		960B1BA41C985CE200C42EE5 /* VVProjectHelper */ = {
+			isa = PBXGroup;
+			children = (
+				960B1BA51C985CE200C42EE5 /* VVProject.h */,
+				960B1BA61C985CE200C42EE5 /* VVProject.m */,
+				960B1BA71C985CE200C42EE5 /* VVWorkspaceManager.h */,
+				960B1BAD1C985D8400C42EE5 /* VVKeyboardEventSender.m */,
+				960B1BAC1C985D8400C42EE5 /* VVKeyboardEventSender.h */,
+				960B1BA81C985CE200C42EE5 /* VVWorkspaceManager.m */,
+			);
+			path = VVProjectHelper;
 			sourceTree = "<group>";
 		};
 		962099041C8E95E2009847E3 = {
@@ -130,9 +167,9 @@
 		962099141C8E95E2009847E3 /* WQVVDocuments */ = {
 			isa = PBXGroup;
 			children = (
+				960B1BA31C985CE200C42EE5 /* Helper */,
 				34A893611C96E3F3006FDC6D /* VVDocuments */,
-				C2798EDE1C96E9460092A55D /* ProjectHelper */,
-				C2798EDD1C96D2130092A55D /* XCFXcodePrivate.h */,
+				960B1B9F1C985C3B00C42EE5 /* WQDocuments */,
 				C2159C401C969A0F00A39F10 /* WQModel */,
 				962099181C8E95E2009847E3 /* WQVVDocuments.h */,
 				962099191C8E95E2009847E3 /* WQVVDocuments.m */,
@@ -164,17 +201,6 @@
 				C2159C4D1C96A38100A39F10 /* DragTextView.m */,
 			);
 			path = WQModel;
-			sourceTree = "<group>";
-		};
-		C2798EDE1C96E9460092A55D /* ProjectHelper */ = {
-			isa = PBXGroup;
-			children = (
-				C2798EDF1C96E9460092A55D /* VVProject.h */,
-				C2798EE01C96E9460092A55D /* VVProject.m */,
-				C2798EE11C96E9460092A55D /* VVWorkspaceManager.h */,
-				C2798EE21C96E9460092A55D /* VVWorkspaceManager.m */,
-			);
-			path = ProjectHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2159C4B1C969D6E00A39F10 /* WQModelVC.xib in Resources */,
-				962099171C8E95E2009847E3 /* WQVVDocuments.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,17 +272,19 @@
 			files = (
 				343EF13E1C97C989002F3955 /* VVTextResult.m in Sources */,
 				9620991A1C8E95E2009847E3 /* WQVVDocuments.m in Sources */,
-				34A893681C96E53A006FDC6D /* VVDocumentsEnter.m in Sources */,
 				343EF1441C97C9CD002F3955 /* NSString+VVSyntax.m in Sources */,
 				343EF1411C97C9C6002F3955 /* NSString+VVTextGetter.m in Sources */,
+				960B1BAE1C985D8400C42EE5 /* VVKeyboardEventSender.m in Sources */,
 				9620991D1C8E95E2009847E3 /* NSObject_Extension.m in Sources */,
+				960B1BB11C985DB300C42EE5 /* WQDocumentsSetting.m in Sources */,
+				960B1BAA1C985CE200C42EE5 /* VVProject.m in Sources */,
 				34A893651C96E450006FDC6D /* NSTextView+VVTextGetter.m in Sources */,
+				960B1BAB1C985CE200C42EE5 /* VVWorkspaceManager.m in Sources */,
 				343EF1471C97C9D4002F3955 /* NSString+PDRegex.m in Sources */,
+				960B1BA21C985C8400C42EE5 /* VVDocumentsEnter.m in Sources */,
 				C2159C4E1C96A38100A39F10 /* DragTextView.m in Sources */,
 				C2159C491C969A5B00A39F10 /* WQModelVC.m in Sources */,
 				C2159C461C969A0F00A39F10 /* NSString+com.m in Sources */,
-				C2798EE31C96E9460092A55D /* VVProject.m in Sources */,
-				C2798EE41C96E9460092A55D /* VVWorkspaceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

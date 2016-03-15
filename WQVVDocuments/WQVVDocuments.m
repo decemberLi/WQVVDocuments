@@ -7,11 +7,11 @@
 //
 
 #import "WQVVDocuments.h"
+#import "VVDocumentsEnter.h"
 #import "NSTextView+VVTextGetter.h"
 #import "NSString+PDRegex.h"
 #import "VVTextResult.h"
 //
-#import "WQModelVC.h"
 #import "WQModelVC.h"
 
 
@@ -21,6 +21,7 @@
 
 // VVDocuments
 @property (nonatomic, assign) BOOL prefixTyped;
+@property (nonatomic, strong) id eventMonitor;
 
 @end
 
@@ -64,7 +65,7 @@
 //            
 //            //Check if there is a "//" already typed in. We do this to solve the undo issue
 //            //Otherwise when you press Cmd+Z, "///" will be recognized and trigger the doc inserting, so you can not perform an undo.
-//            NSString *triggerString = [[VVDocumenterSetting defaultSetting] triggerString];
+//            NSString *triggerString = @"///";//[[VVDocumenterSetting defaultSetting] triggerString];
 //            
 //            if (triggerString.length > 1) {
 //                NSString *preTypeString = [triggerString substringToIndex:triggerString.length - 2];
@@ -110,7 +111,7 @@
 //                } else {
 //                    resultToDocument = resultUntilFileEnd;
 //                }
-    
+//    
 //                //We always write document until semicolon for enum. (Maybe struct later)
 //                if ([resultToDocument.string vv_isEnum]) {
 //                    resultToDocument = resultUntilSemiColon;

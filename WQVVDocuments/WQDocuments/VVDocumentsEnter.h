@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VVKeyboardEventSender.h"
+#import "NSString+VVSyntax.h"
 
 @interface VVDocumentsEnter : NSObject
 
