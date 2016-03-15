@@ -1,0 +1,27 @@
+//
+//  WQVVDocuments-Prefix.pch
+//  WQVVDocuments
+//
+//  Created by Shane on 16/3/15.
+//  Copyright © 2016年 Shanesun. All rights reserved.
+//
+
+#ifndef WQVVDocuments_Prefix_pch
+#define WQVVDocuments_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
+#import "NSString+PDRegex.h"
+#endif
+
+//#define __DEBUG__ 1
+#ifdef __DEBUG__
+#define VVLog(...) NSLog(__VA_ARGS__)
+#else
+#define VVLog(...) do{} while(0)
+#endif
+
+#endif /* WQVVDocuments_Prefix_pch */

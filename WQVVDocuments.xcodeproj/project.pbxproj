@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		342E983C1C981AA200199BBC /* WQVVDocuments-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WQVVDocuments-Prefix.pch"; sourceTree = "<group>"; };
 		343EF13C1C97C989002F3955 /* VVTextResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTextResult.h; sourceTree = "<group>"; };
 		343EF13D1C97C989002F3955 /* VVTextResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTextResult.m; sourceTree = "<group>"; };
 		343EF13F1C97C9C6002F3955 /* NSString+VVTextGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VVTextGetter.h"; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 		962099151C8E95E2009847E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				342E983C1C981AA200199BBC /* WQVVDocuments-Prefix.pch */,
 				962099161C8E95E2009847E3 /* WQVVDocuments.xcscheme */,
 			);
 			name = "Supporting Files";
@@ -292,6 +294,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
+				GCC_PREFIX_HEADER = "WQVVDocuments/WQVVDocuments-Prefix.pch";
 				INFOPLIST_FILE = WQVVDocuments/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -307,6 +310,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
+				GCC_PREFIX_HEADER = "WQVVDocuments/WQVVDocuments-Prefix.pch";
 				INFOPLIST_FILE = WQVVDocuments/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
