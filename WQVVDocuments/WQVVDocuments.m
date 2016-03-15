@@ -11,6 +11,7 @@
 #import "NSString+PDRegex.h"
 #import "VVTextResult.h"
 //
+#import "WQModelVC.h"
 
 @interface WQVVDocuments()
 
@@ -220,9 +221,8 @@
 
 - (void)clickedCreateModel
 {
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"WQModel"];
-    [alert runModal];
+    WQModelVC *controller = [[WQModelVC alloc] initWithXCodeWindow:[NSApp keyWindow]];
+    [controller showWindow:controller];
 }
 
 

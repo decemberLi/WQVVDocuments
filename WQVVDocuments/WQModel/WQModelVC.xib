@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WQModelVC">
+            <connections>
+                <outlet property="dataView" destination="9ZT-9j-Grk" id="aVh-cC-YPL"/>
+                <outlet property="nameField" destination="msd-2l-gN3" id="zNc-ey-VJE"/>
+                <outlet property="window" destination="j2D-oN-T2X" id="8MJ-78-yyl"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Input your json or drag json file" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="j2D-oN-T2X">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="768" y="530" width="400" height="400"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="b3a-ze-NGg">
+                <rect key="frame" x="0.0" y="1" width="400" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6iq-xl-f0h">
+                        <rect key="frame" x="315" y="-4" width="82" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="5jw-k8-6EI"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="Enter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="riK-00-L6f">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="onCreat:" target="-2" id="H0d-mz-bz5"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GiY-2X-fgd">
+                        <rect key="frame" x="233" y="-4" width="82" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="vQ1-Ej-8ZT"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bZC-T0-pxT">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                            <connections>
+                                <action selector="onCancel:" target="-2" id="bpZ-9E-3sI"/>
+                            </connections>
+                        </buttonCell>
+                    </button>
+                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mog-8W-f21">
+                        <rect key="frame" x="0.0" y="26" width="400" height="334"/>
+                        <clipView key="contentView" id="lhw-Zf-K6g">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="334"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="9ZT-9j-Grk" customClass="DragTextView">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="334"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="400" height="334"/>
+                                    <size key="maxSize" width="500" height="10000000"/>
+                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="400" height="334"/>
+                                    <size key="maxSize" width="500" height="10000000"/>
+                                    <connections>
+                                        <outlet property="dragDelegate" destination="-2" id="b8v-IR-RnP"/>
+                                    </connections>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="I53-LC-BmR">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="gg6-8A-Lrf">
+                            <rect key="frame" x="224" y="1" width="15" height="133"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="msd-2l-gN3">
+                        <rect key="frame" x="15" y="370" width="370" height="20"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" placeholderString="输入类名" drawsBackground="YES" id="eDZ-H6-zuo">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6iq-xl-f0h" secondAttribute="trailing" constant="9" id="0Uc-dh-6hi"/>
+                    <constraint firstItem="mog-8W-f21" firstAttribute="top" secondItem="b3a-ze-NGg" secondAttribute="top" constant="40" id="52o-0C-mHI"/>
+                    <constraint firstItem="msd-2l-gN3" firstAttribute="leading" secondItem="b3a-ze-NGg" secondAttribute="leading" constant="15" id="EZD-JN-hgT"/>
+                    <constraint firstItem="GiY-2X-fgd" firstAttribute="top" secondItem="mog-8W-f21" secondAttribute="bottom" constant="2" id="Ela-b7-dSR"/>
+                    <constraint firstAttribute="trailing" secondItem="mog-8W-f21" secondAttribute="trailing" id="RgZ-4R-eaM"/>
+                    <constraint firstAttribute="trailing" secondItem="msd-2l-gN3" secondAttribute="trailing" constant="15" id="Z51-n3-n0k"/>
+                    <constraint firstItem="mog-8W-f21" firstAttribute="top" secondItem="msd-2l-gN3" secondAttribute="bottom" constant="10" id="hIk-rY-G1h"/>
+                    <constraint firstItem="mog-8W-f21" firstAttribute="leading" secondItem="b3a-ze-NGg" secondAttribute="leading" id="i8Q-lD-Afm"/>
+                    <constraint firstItem="msd-2l-gN3" firstAttribute="top" secondItem="b3a-ze-NGg" secondAttribute="top" constant="10" id="mwi-BR-dqu"/>
+                    <constraint firstAttribute="bottom" secondItem="GiY-2X-fgd" secondAttribute="bottom" constant="3" id="o3X-RH-QHy"/>
+                    <constraint firstItem="6iq-xl-f0h" firstAttribute="leading" secondItem="GiY-2X-fgd" secondAttribute="trailing" constant="12" id="qim-1p-5tc"/>
+                    <constraint firstAttribute="bottom" secondItem="6iq-xl-f0h" secondAttribute="bottom" constant="3" id="xS0-Z8-yHR"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="216" y="313"/>
+        </window>
+    </objects>
+</document>
