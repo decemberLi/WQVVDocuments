@@ -234,10 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2159C4B1C969D6E00A39F10 /* WQModelVC.xib in Resources */,
-<<<<<<< HEAD
-=======
 				962099171C8E95E2009847E3 /* WQVVDocuments.xcscheme in Resources */,
->>>>>>> 483fad7b1684859408228654d1891a3342f2029a
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +252,7 @@
 				343EF1411C97C9C6002F3955 /* NSString+VVTextGetter.m in Sources */,
 				9620991D1C8E95E2009847E3 /* NSObject_Extension.m in Sources */,
 				34A893651C96E450006FDC6D /* NSTextView+VVTextGetter.m in Sources */,
-<<<<<<< HEAD
 				343EF1471C97C9D4002F3955 /* NSString+PDRegex.m in Sources */,
-=======
->>>>>>> 483fad7b1684859408228654d1891a3342f2029a
 				C2159C4E1C96A38100A39F10 /* DragTextView.m in Sources */,
 				C2159C491C969A5B00A39F10 /* WQModelVC.m in Sources */,
 				C2159C461C969A0F00A39F10 /* NSString+com.m in Sources */,
