@@ -13,7 +13,7 @@
 #import <objc/runtime.h>
 
 @interface WQModelVC ()
-@property(weak)NSWindow *xcodeWindow;
+@property (weak) NSWindow *xcodeWindow;
 @property (weak) IBOutlet NSTextField *nameField;
 @property (strong) IBOutlet NSTextView *dataView;
 @end
